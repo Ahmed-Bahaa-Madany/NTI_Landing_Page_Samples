@@ -1,0 +1,24 @@
+body {
+  height: 1000px;
+  margin: 0;
+}
+p {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+p::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid red;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  display: block;
+}

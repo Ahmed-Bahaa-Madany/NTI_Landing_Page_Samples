@@ -1,0 +1,110 @@
+html {
+  direction: rtl;
+}
+/* Start body */
+.body .body-cont {
+  padding-top: 75px;
+}
+.body .body-cont .search {
+  position: relative;
+  margin-bottom: 25px;
+}
+.body .body-cont .search input {
+  width: 100%;
+}
+.body .body-cont .search span {
+  position: absolute;
+  left: 2%;
+  top: 25%;
+  color: orange;
+}
+.body .body-cont .product {
+  text-align: right;
+}
+.body .body-cont .product h4 {
+  position: relative;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  color: blue;
+}
+.body .body-cont .product h4 span {
+  position: absolute;
+  left: 2%;
+  top: 25%;
+}
+.body .body-cont .product input[type="number"] {
+  width: 45%;
+  margin-bottom: 20px;
+}
+.body .body-cont .product input[type="checkbox"] {
+  width: 15px;
+  display: inline-block;
+  height: 15px;
+}
+.body .body-cont .product label {
+  font-size: 20px;
+}
+.body .body-cont .product label.starr {
+  color: orange;
+  font-size: 20px;
+  font-weight: bold;
+}
+.body .body-cont .items-card {
+  text-align: right;
+}
+.body .body-cont .items-card div > div {
+  margin-bottom: 10px ;
+}
+.body .body-cont .items-card  div.card {
+  border: 1px solid gray;
+  padding: 10px;
+}
+.body .body-cont .items-card div.card img {
+  width: 100%;
+}
+.body .body-cont .items-card div.card h3:first-of-type {
+  font-size: 15px;
+  color: gray;
+  text-align: left;
+}
+.body .body-cont .items-card div.card h3:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.body .body-cont .items-card div.card p {
+  font-size: 15px;
+}
+.body .body-cont .items-card div.card > span {
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  color: #eee;
+  margin-bottom: 15px;
+}
+.body .body-cont .items-card div.card a {
+  display: block;
+  font-size: 20px;
+}
+.body .body-cont .items-card div.card a span {
+  font-size: 15px;
+}
+.body .body-cont .items-card div.card button {
+  background-color: orange;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+
+/* End body */
+/* Start Media */
+
+@media (max-width: 767px) {
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+}
+/* End Media */

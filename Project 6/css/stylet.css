@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+}
+
+/* Start Public Style */
+:root {
+  --main-color: #7b54ff;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* End Public Style */
+/* Start Navbar */
+.navbar .nav-content {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.navbar .nav-content .logo {
+  float: left;
+  width: 50%;
+}
+.navbar .nav-content .nav {
+  float: right;
+  width: 50%;
+}
+.navbar .nav-content .nav ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.navbar .nav-content .nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.navbar .nav-content .nav ul li a {
+  color: gray;
+}
+.navbar .nav-content .nav ul li:last-child {
+  background-color: var(--main-color);
+  padding: 10px 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+.navbar .nav-content .nav ul li:last-child a {
+  color: white;
+}
+/* End Navbar */
+
+/* Start Slider */
+.slider {
+  margin-top: 20px;
+  background-image: url(../image/img-home.jpg);
+  height: 700px;
+}
+.slider .slid-content .slid-empty {
+  height: 250px;
+}
+.slider .slid-content .slid-text {
+  width: 50%;
+  color: white;
+}
+.slider .slid-content .slid-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.slider .slid-content .slid-text p {
+  font-size: 17px;
+}
+.slider .slid-content .slid-text button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 10px;
+  font-size: 17px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+/* End Slider */
+
+/* Start About */
+.about .about-head {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: #0c0633;
+}
+.about .about-head h1 {
+  font-weight: bold;
+}
+.about .about-head p {
+  color: gray;
+}
+.about .about-content {
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.about .about-content div {
+  float: left;
+  width: calc(85% / 3);
+  text-align: center;
+  margin-right: 5%;
+}
+.about .about-content div span {
+  font-size: 40px;
+}
+.about .about-content div h2 {
+  font-weight: lighter;
+}
+.about .about-content div p {
+  color: gray;
+  text-align: justify;
+}
+.about .about-img img {
+  width: 100%;
+}
+/* End About */
+
+/* Start components */
+.components {
+  background-color: #0c0633;
+}
+.components .comp-content {
+  width: 90%;
+  margin: auto;
+  color: white;
+  padding: 70px 0px;
+  text-align: center;
+}
+.components .comp-content h1 {
+  font-size: 35px;
+}
+.components .comp-content button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 10px;
+  font-size: 17px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+/* End components */
+/* Start pricing */
+.pricing .pric-content {
+  overflow: hidden;
+  margin-top: 100px;
+}
+.pricing .pric-content .pric-img {
+  float: left;
+  width: 50%;
+}
+.pricing .pric-content .pric-img img {
+  width: 100%;
+}
+.pricing .pric-content .pric-text {
+  float: left;
+  width: 50%;
+  margin-top: 25px;
+}
+.pricing .pric-content .pric-text div {
+  overflow: hidden;
+}
+.pricing .pric-content .pric-text div .right {
+  float: left;
+  width: 5%;
+}
+.pricing .pric-content .pric-text div .right span {
+  display: inline-block;
+  margin-top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.pricing .pric-content .pric-text div .right-text {
+  float: left;
+  width: 95%;
+  margin-bottom: 20px;
+}
+.pricing .pric-content .pric-text div .right-text h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.pricing .pric-content .pric-text div .right-text p {
+  margin-top: 0;
+  width: 80%;
+}
+/* End pricing */
+/* Start Brand */
+.brand {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.brand .brand-content ul {
+  overflow: hidden;
+}
+.brand .brand-content ul li {
+  float: left;
+  width: calc(82% / 3);
+  margin-right: 3%;
+  margin-left: 3%;
+}
+/* End Brand */
+/* Start Contact */
+.contact {
+  border-top: 1px solid #eee;
+  height: 300px;
+}
+.contact .contact-content {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.contact .contact-content div {
+  float: left;
+  width: calc(91% / 3);
+  margin-right: 3%;
+}
+.contact .contact-content div h3 {
+  font-weight: lighter;
+  color: 0c0633;
+}
+.contact .contact-content div p {
+  color: gray;
+}
+.contact .contact-content div span {
+  font-size: 30px;
+  color: #0c0633;
+}
+.contact .contact-content div input {
+  width: 80%;
+  padding: 10px 10px;
+  border: 1px solid #eee;
+}
+.contact .contact-content div button {
+  padding: 11px 10px;
+  background-color: #7b54ff;
+  border: 1px solid #7b54ff;
+  color: white;
+  margin-left: -3.5px;
+}
+/* End Contact */

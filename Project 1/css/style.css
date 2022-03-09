@@ -1,0 +1,284 @@
+/* Start Header ********************************************* */
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      45deg,
+      rgba(86, 58, 250, 0.9) 0%,
+      rgba(116, 15, 214, 0.9) 100%
+    ),
+    url(../image/hero-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+.head-nav nav.navbar button.navbar-toggler span.navbar-toggler-icon {
+  color: white;
+}
+.head-nav nav.navbar a.navbar-brand {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.head-nav nav.navbar-expand-lg {
+  justify-content: space-between;
+}
+.head-nav nav.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.head-nav nav.navbar ul > li {
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+.head-nav nav.navbar ul > li:last-of-type {
+  margin-right: 0px;
+  margin-left: 30px;
+}
+.head-nav nav.navbar ul > li:last-of-type a {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.head-nav nav.navbar ul > li:last-of-type:hover a {
+  color: white;
+}
+.head-nav nav.navbar ul > li > a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.head-nav nav.navbar ul > li:not(:last-of-type) > a::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: #fff;
+}
+.head-nav nav.navbar ul > li:hover > a {
+  color: white;
+}
+.head-nav nav.navbar ul > li:hover > a::before {
+  width: 100%;
+  color: white;
+}
+.head-nav nav.navbar ul > li.dropdown div a {
+  color: #2c4964;
+  font-size: 14px;
+  font-weight: 600;
+}
+header .head-content {
+  padding-top: 250px;
+}
+header .head-content .head-cont .head-info {
+  padding-top: 50px;
+}
+header .head-content .head-cont .head-info h1 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+}
+header .head-content .head-cont .head-info p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+header .head-content .head-cont .head-info a {
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 30px;
+}
+header .head-content .head-cont .head-info a:hover {
+  color: #2c4964;
+  background-color: white;
+}
+header .head-content .head-cont .head-img img {
+  width: 80%;
+  margin: 0 10%;
+  animation: up-down 2s infinite alternate;
+}
+/******************************************************/
+section.about {
+  padding: 100px 0;
+}
+section.about .about-info h1 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #2c4964;
+}
+section.about .about-info p {
+  color: #444444;
+  margin-top: 0;
+}
+section.about .about-info ul {
+  padding-left: 0;
+}
+section.about .about-info ul li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+section.about .about-info ul li span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #5846f9;
+  border: 1px solid #5846f9;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+section.about .about-info ul li p {
+  width: 90%;
+}
+section.about .about-info a {
+  text-decoration: none;
+  background: linear-gradient(45deg, #5846f9 0%, #7b27d8 100%);
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 10px;
+}
+section.about .about-img img {
+  width: 100%;
+}
+/* ************************************************ */
+.counts {
+  background: linear-gradient(
+      90deg,
+      rgba(88, 70, 249, 0.5) 0%,
+      rgba(123, 39, 216, 0.5) 100%
+    ),
+    url(../image/counts-bg.png) center center no-repeat;
+  padding: 80px 0;
+}
+.counts .count {
+  text-align: center;
+}
+.counts .count h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 600;
+}
+.counts .count p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* ************************************************ */
+.services {
+  padding: 100px 0;
+  background-color: #f9f8ff;
+}
+.services .title {
+  text-align: center;
+}
+.services .title h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.services .title > span {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: #5846f9;
+  margin-bottom: 20px;
+}
+.services .title p {
+  color: #444444;
+}
+.services .service:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+}
+.services .service {
+  text-align: center;
+  padding: 50px 20px;
+  height: 300px;
+  transition: all ease-in-out 0.3s;
+}
+.services .service span {
+  font-size: 35px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.services .service.ser-1 span {
+  color: #47aeff;
+}
+.services .service.ser-2 span {
+  color: #ffa76e;
+}
+.services .service.ser-3 span {
+  color: #e80368;
+}
+.services .service.ser-4 span {
+  color: #ffbb2c;
+}
+.services .service.ser-5 span {
+  color: #ff5828;
+}
+.services .service.ser-6 span {
+  color: #11dbcf;
+}
+.services .service h3 {
+  color: #47aeff;
+}
+.services .service p {
+  color: 444444;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/****************************************************/
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    height: 110vh;
+  }
+  .head-cont .order-two {
+    text-align: center;
+  }
+  .order-two {
+    order: 2;
+  }
+  .order-one {
+    order: 1;
+  }
+
+  header .head-content {
+    padding-top: 100px;
+  }
+}

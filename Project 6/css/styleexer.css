@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+/* Start Public Style */
+:root {
+  --main-color: #7b54ff;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* End Public Style */
+/* Start Navbar */
+.navbar .nav-content {
+  overflow: hidden;
+}
+.navbar .nav-content .logo {
+  float: right;
+  width: 20%;
+}
+.navbar .nav-content .nav-search {
+  float: right;
+  width: 60%;
+}
+.navbar .nav-content .nav-icon {
+  float: right;
+  width: 20%;
+}
+/* End Navbar */

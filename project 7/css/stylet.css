@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+}
+
+/* Start Public Style */
+:root {
+  --main-color: #212121;
+  --second-color: #474559;
+}
+.container {
+  width: 50%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* End Public Style */
+/* Start Navbar */
+.navbar .nav {
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 50px 0;
+}
+.navbar .nav .logo {
+  float: left;
+  width: 20%;
+}
+.navbar .nav .logo a {
+  color: var(--main-color);
+}
+.navbar .nav .logo a span i {
+  font-size: 30px;
+}
+.navbar .nav .logo a span:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar .nav .navul {
+  float: left;
+  width: 60%;
+}
+.navbar .nav .navul ul {
+  overflow: hidden;
+  margin-bottom: 0;
+  margin-top: 13px;
+}
+.navbar .nav .navul ul li {
+  float: left;
+  margin-left: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.navbar .nav .navul ul li a {
+  color: #6c757d;
+}
+.navbar .nav .color-mode {
+  float: left;
+  width: 20%;
+}
+.navbar .nav .color-mode a {
+  color: var(--main-color);
+}
+.navbar .nav .color-mode a span i {
+  font-size: 25px;
+}
+.navbar .nav .color-mode a span:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* End Navbar */
+/* Start About */
+.about .about-div {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.about .about-div .about-content,
+.about .about-div .about-image {
+  float: left;
+  width: 50%;
+}
+.about .about-div .about-content h4 {
+  color: gray;
+}
+.about .about-div .about-content h1 {
+  font-size: 45px;
+  color: var(--main-color);
+}
+.about .about-div .about-content h1 span {
+  color: #ffc107;
+}
+.about .about-div .about-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.about .about-div .about-content button {
+  background-color: #eee;
+  color: gray;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  margin-right: 20px;
+}
+.about .about-div .about-content button:hover {
+  color: #ffc107;
+}
+.about .about-div .about-content button:last-child {
+  background-color: var(--second-color);
+  color: white;
+}
+.about .about-div .about-content button:last-child:hover {
+  background-color: #ffc107;
+  color: white;
+}
+.about .about-div .about-image img {
+  width: 100%;
+  height: 300px;
+}
+/* End About */
+/* Start Skills */
+.skills .skills-cont {
+  overflow: hidden;
+  margin-top: 75px;
+}
+.skills .skills-cont .experiences,
+.skills .skills-cont .Educations {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.skills .skills-cont .experiences h1,
+.skills .skills-cont .Educations h1 {
+  color: #474559;
+  font-size: 40px;
+  font-weight: bold;
+}
+.skills .skills-cont .experiences .skill,
+.skills .skills-cont .Educations .skill {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+.skills .skills-cont .experiences .skill::before {
+  overflow: hidden;
+  margin-bottom: 35px;
+  content: "";
+  position: absolute;
+  height: 62%;
+  border-left: 5px solid var(--second-color);
+  top: 165px;
+  left: 32px;
+  z-index: -1;
+}
+.skills .skills-cont .Educations .skill::after {
+  overflow: hidden;
+  margin-bottom: 35px;
+  content: "";
+  position: absolute;
+  height: 46%;
+  border-left: 5px solid var(--second-color);
+  top: 165px;
+  left: 32px;
+  z-index: -1;
+}
+.skills .skills-cont .experiences .skill div,
+.skills .skills-cont .Educations .skill div {
+  float: left;
+}
+.skills .skills-cont .experiences .skill div:first-child,
+.skills .skills-cont .Educations .skill div:first-child {
+  width: 15%;
+  margin-right: 5%;
+}
+.skills .skills-cont .experiences .skill div:first-child span,
+.skills .skills-cont .Educations .skill div:first-child span {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--second-color);
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-weight: bold;
+}
+.skills .skills-cont .experiences .skill div:last-child,
+.skills .skills-cont .Educations .skill div:last-child {
+  width: 80%;
+}
+.skills .skills-cont .experiences .skill div:last-child span:first-child,
+.skills .skills-cont .Educations .skill div:last-child span:first-child {
+  margin: 0;
+  color: var(--second-color);
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.skills .skills-cont .experiences .skill div:last-child span:nth-child(2),
+.skills .skills-cont .Educations .skill div:last-child span:nth-child(2) {
+  color: var(--second-color);
+  font-weight: bold;
+}
+.skills .skills-cont .experiences .skill div:last-child p,
+.skills .skills-cont .Educations .skill div:last-child p {
+  color: #6c757d;
+  font-size: 22px;
+  margin-top: 10px;
+}
+/* End Skills */
+/* Start Contact */
+.contact .contact-cont {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.contact .contact-cont .location {
+  float: left;
+  width: 44%;
+  margin-right: 6%;
+}
+.contact .contact-cont .location iframe {
+  width: 100%;
+  height: 300px;
+}
+.contact .contact-cont .location .social {
+  background-color: var(--second-color);
+  margin-top: -17px;
+  overflow: hidden;
+  padding-top: 20px;
+  color: white;
+}
+.contact .contact-cont .location .social .soc-one {
+  float: left;
+  width: 65%;
+  padding-left: 15%;
+}
+.contact .contact-cont .location .social .soc-one h3 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.contact .contact-cont .location .social .soc-one p a {
+  color: white;
+}
+.contact .contact-cont .location .social .soc-two {
+  float: left;
+  width: 20%;
+  padding-top: 20px;
+}
+.contact .contact-cont .location .social .soc-two ul {
+  padding-left: 10px;
+}
+.contact .contact-cont .location .social .soc-two ul li {
+  margin-bottom: 13px;
+  font-size: 20px;
+}
+.contact .contact-cont .talk {
+  float: left;
+  width: 50%;
+}
+.contact .contact-cont .talk h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.contact .contact-cont .talk form {
+  overflow: hidden;
+}
+.contact .contact-cont .talk form input {
+  width: 45%;
+  margin-bottom: 30px;
+  padding: 15px 10px;
+  font-weight: bold;
+}
+.contact .contact-cont .talk form input:first-child {
+  margin-right: 9%;
+}
+.contact .contact-cont .talk form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #6c757d;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contact .contact-cont .talk form button {
+  float: right;
+  background-color: #ffc107;
+  color: white;
+  font-size: 15px;
+  padding: 15px 60px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+}
+
+/* End Contact */
+.footer {
+  margin-top: 50px;
+}

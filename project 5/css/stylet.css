@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+}
+/* Start Public Style */
+:root {
+  --main-color: #37517e;
+  --second-color: #47b2e4;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* End Public Style */
+/* Start Header */
+.site-header {
+  position: relative;
+  background-color: var(--main-color);
+  height: 700px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  z-index: 999;
+}
+.header .navbar .logo {
+  float: left;
+  width: 45%;
+}
+.header .navbar .logo h1 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header .navbar .nav {
+  float: left;
+  width: 55%;
+}
+.header .navbar .nav > ul > li {
+  display: inline-block;
+  margin-right: 2%;
+  padding: 5px 5px;
+}
+.header .navbar .nav > ul > li:hover > a:not(:last-child) {
+  color: var(--second-color);
+}
+.header .navbar .nav > ul > li:last-child:hover {
+  background-color: var(--second-color);
+}
+.header .navbar .nav > ul > li.drop-down span {
+  color: white;
+  font-size: 10px;
+}
+.header .navbar .nav > ul > li:last-child {
+  border: 2px solid var(--second-color);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+.header .navbar .nav > ul > li:last-child a {
+  font-weight: bold;
+}
+.header .navbar .nav > ul > li.drop-down {
+  position: relative;
+}
+.header .navbar .nav > ul > li.drop-down:hover > ul {
+  display: block;
+}
+.header .navbar .nav > ul > li > a {
+  font-size: 15px;
+  color: white;
+}
+.header .navbar .nav > ul > li > ul {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  padding: 0px;
+  border-radius: 5px;
+  width: 170px;
+  background-color: white;
+  display: none;
+}
+.header .navbar .nav > ul > li > ul > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header .navbar .nav > ul > li > ul > li > a {
+  color: gray;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.header .navbar .nav > ul > li > ul > li.deep-drop-down {
+  position: relative;
+}
+.header .navbar .nav > ul > li > ul > li.deep-drop-down:hover span {
+  color: var(--second-color);
+}
+.header .navbar .nav > ul > li > ul > li:hover > a {
+  color: var(--second-color);
+}
+.header .navbar .nav > ul > li > ul > li.deep-drop-down:hover > ul {
+  display: block;
+}
+.header .navbar .nav > ul > li > ul > li.deep-drop-down span {
+  font-size: 10px;
+  color: gray;
+  margin-left: 20px;
+}
+.header .navbar .nav > ul > li > ul > li > ul {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+  padding: 0px;
+  border-radius: 5px;
+  width: 150px;
+  background-color: white;
+  display: none;
+}
+.header .navbar .nav > ul > li > ul > li > ul > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header .navbar .nav > ul > li > ul > li > ul > li > a {
+  color: gray;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.header .navbar .nav > ul > li > ul > li > ul > li:hover > a {
+  color: var(--second-color);
+}
+/* End Header */
+/* Start Header News */
+.header-news {
+  padding-top: 100px;
+}
+.header-news .news {
+  overflow: hidden;
+}
+.header-news .news .info {
+  float: left;
+  width: 50%;
+  margin-top: 60px;
+}
+.header-news .news .info h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+.header-news .news .info h2 {
+  color: #ffffff99;
+  font-size: 25px;
+}
+.header-news .news .info a.btn {
+  color: white;
+  background-color: var(--second-color);
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 40px;
+}
+.header-news .news .info a.watch {
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: 40px;
+}
+.header-news .news .info a.watch:hover {
+  color: var(--second-color);
+}
+.header-news .news .info a:last-child {
+  color: white;
+  padding: 10px 0;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.header-news .news .image {
+  float: left;
+  width: 50%;
+}
+.header-news .news .image img {
+  width: 100%;
+}
+/* End Header News */
+
+/* Start Clients */
+.clients .client-img {
+  overflow: hidden;
+  margin-top: 30px;
+  height: 70px;
+}
+.clients .client-img div {
+  float: left;
+  width: calc(84% / 6);
+  margin-right: 2%;
+}
+.clients .client-img div:first-child {
+  margin-left: 4%;
+}
+.clients .client-img div img {
+  width: 50%;
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+}
+.clients .client-img div img:hover {
+  filter: grayscale(0);
+  width: 60%;
+}
+/* End Clients */
+/* Start About */
+.about {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.about .about-content {
+  overflow: hidden;
+}
+.about .about-content h1 {
+  width: 100%;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bolder;
+  font-size: 35px;
+  position: relative;
+  margin-top: 0;
+  padding-bottom: 15px;
+}
+.about .about-content h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+  width: 10%;
+  background-color: #ddd;
+  height: 1px;
+  display: block;
+}
+.about .about-content h1::after {
+  content: "";
+  position: absolute;
+  bottom: -1.3px;
+  left: 48.5%;
+  width: 3%;
+  background-color: var(--second-color);
+  height: 3px;
+  display: block;
+}
+.about .about-content .about-info {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.about .about-content .about-info h3 {
+  color: #444444;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.about .about-content .about-info div {
+  margin-bottom: 10px;
+}
+.about .about-content .about-info div span:first-child {
+  color: var(--second-color);
+  font-size: 13px;
+}
+.about .about-content .about-info div span:last-child {
+  color: #444444;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.about .about-content .about-more {
+  float: left;
+  width: 48%;
+}
+.about .about-content .about-more h3 {
+  color: #444444;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.about .about-content .about-more a {
+  color: var(--second-color);
+  padding: 10px 20px;
+  border: 2px solid var(--second-color);
+  border-radius: 5px;
+  font-weight: bold;
+}
+.about .about-content .about-more a:hover {
+  background-color: var(--second-color);
+}
+/* End About */
+
+/* Start services */
+
+/* End services */

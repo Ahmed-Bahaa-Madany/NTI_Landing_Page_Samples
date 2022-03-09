@@ -1,0 +1,94 @@
+.navbar {
+  background-color: #333333;
+  color: white;
+}
+.navbar .container {
+  margin-left: 25%;
+  margin-right: 25%;
+  overflow: hidden;
+}
+.navbar .container .logo {
+  float: left;
+  width: 30%;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.navbar .container .nav {
+  float: right;
+  width: 70%;
+}
+.navbar .container .nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.navbar .container .nav li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .container .nav li:nth-child(2) a {
+  color: red;
+}
+.contantt {
+  overflow: hidden;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.contantt div {
+  float: left;
+  width: 31%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align: center;
+}
+.contantt div.one {
+  background-color: aquamarine;
+}
+.contantt div.two {
+  background-color: bisque;
+}
+.contantt div.three {
+  background-color: cornflowerblue;
+}
+.contantt div h2 {
+  color: black;
+  font-size: 25px;
+}
+.contantt div hr {
+  width: 50%;
+}
+.contantt div p {
+  font-size: 18;
+}
+.contantt div.one p span,
+.contantt div.two p span,
+.contantt div.three p span {
+  color: red;
+}
+.contanttt {
+  margin-top: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.contanttt p {
+  overflow: auto;
+  height: 120px;
+}
+
+.dspan span {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  width: 236px;
+  height: 46px;
+  margin-bottom: 30px;
+}
+.dspan span:first-of-type {
+  color: red;
+}
+.dspan span:nth-child(2) {
+  color: black;
+}
+.dspan span:last-of-type {
+  color: blue;
+}

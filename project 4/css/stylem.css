@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+:root {
+  --main-color: #1977cc;
+  --font-color: #2c4964;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* Start Services */
+.services {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.services .servic {
+  text-align: center;
+}
+.services .servic h1 {
+  color: var(--font-color);
+  font-size: 35px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.services .servic p {
+  font-size: 18px;
+  color: #444444;
+}
+.services .servic h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+  width: 10%;
+  background-color: #ddd;
+  height: 1px;
+  display: block;
+}
+.services .servic h1::after {
+  content: "";
+  position: absolute;
+  bottom: -1.3px;
+  left: 48.5%;
+  width: 3%;
+  background-color: var(--main-color);
+  height: 3px;
+  display: block;
+}
+.services .servic .serviec-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services .servic .serviec-box div {
+  width: calc(96% / 3);
+  border: 1px solid #444444;
+  margin-bottom: 20px;
+  padding: 50px 20px;
+}
+.services .servic .serviec-box div:hover {
+  background-color: var(--main-color);
+}
+.services .servic .serviec-box div:hover span {
+  background-color: white;
+  color: var(--main-color);
+}
+.services .servic .serviec-box div span {
+  background-color: var(--main-color);
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+.services .servic .serviec-box div span::before {
+  content: "";
+  position: absolute;
+  background-color: #1977cc52;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  top: -5px;
+  left: -5px;
+  display: inline-block;
+  z-index: -1;
+}
+.services .servic .serviec-box div h2 {
+  color: var(--font-color);
+}
+.services .servic .serviec-box div p {
+  color: #444444;
+  font-size: 18px;
+}
+/* End Services */
+
+/* Start Media */
+
+@media (max-width: 767px) {
+  .services .servic .serviec-box div {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .services .servic .serviec-box div {
+    width: calc(98% / 2);
+  }
+}
+/* @media (max-width: 1200px) {
+    .services .servic .serviec-box div {
+      width: calc(96% / 2);
+    }
+  } */
+/* End Media */

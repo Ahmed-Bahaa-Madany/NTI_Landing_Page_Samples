@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  position: relative;
+}
+.animation1234 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  position: absolute;
+  background-color: red;
+  animation-name: aroundaround;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+@keyframes aroundaround {
+  0% {
+    transform: rotate(360deg);
+    top: 0px;
+    left: 0px;
+  }
+  20% {
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  40% {
+    top: 800px;
+    left: 0px;
+  }
+  60% {
+    top: 800px;
+    left: 800px;
+  }
+  80% {
+    top: 0px;
+    left: 800px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
